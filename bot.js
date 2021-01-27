@@ -14,7 +14,12 @@ var mots =
     "On m’a dit en gros l’asile c’est en dehors de la ville et déjà l’asile c’est un isolement en soi, bah le mettre loin comme ça ce n'est pas anodin, tu vois. être fou c’est être isolé, incompris, et on vit dans une société.",
     "On attend souvent l'épisode 3 d'une série avec impatience mais parfois vaut mieux pas n'avoir pas de suite plutôt qu'être déçu.",
     "Chère journal, j'ai si mal dormi cette nuit à cause de cette question : il faudrait combien de kilos de pâtes à fixe pour coller par les pieds un humain au plafond? Depuis ce matin j'essaye d'avoir une réponse via l'internet.",
-    "J'ai rencontré un complotiste aujourd'hui et je me suis dit, si les complotistes étaient un carburant pour fusée, alors on utiliserait Facebook comme réservoir afin d'aller sur mars pour contempler la terre plate"
+    "J'ai rencontré un complotiste aujourd'hui et je me suis dit, si les complotistes étaient un carburant pour fusée, alors on utiliserait Facebook comme réservoir afin d'aller sur mars pour contempler la terre plate",
+    "Mes parents mon déshérité quand j'ai acheté un macbook pour jouer à Fornite",
+    "J'ai fait un cauchemar ou je mangé un Kebab pakistanais avec Dieu.",
+    "Un poulpe m'a montré son scrotum dans ça camionnette ",
+    "Mon père m'as dit les noirs c'ést tous des voleurs, mais je ne comprend pas les personnes noir n'existe pas ?!"
+    "hyperflex m'a dit que si a trente ans t'as pas de loupitaf t'as raté t'as vie"
 ];
 
 client.on('ready', () => {
