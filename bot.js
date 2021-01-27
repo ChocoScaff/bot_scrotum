@@ -25,7 +25,7 @@ client.on('ready', () => {
 var RNG; //convention de nommage (random number generator), et surtout pas d'accent dans du code (excepté les commentaires et les strings)
 
 client.on("message", message => {
-    if((message.content === "!stepipoule")) //Si un utilisateur envoie un message "cc" le bot répond
+    if((message.content === "!stepipoule")) //Si un utilisateur envoie le message "!stepipoule" le bot répond
     {
         //message.channel.send("Coucou"); 
         RNG = getRandomInt(mots.length); // <== J'ai remplacé le 7 par la longueur du tableau "mots"
