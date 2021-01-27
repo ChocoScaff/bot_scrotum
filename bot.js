@@ -27,4 +27,4 @@ client.on("message", message => {
 client.on('error', console.error); // Afficher les erreurs
 
 // Lancement du bot, avec le token spécifié (que vous avez généré précédemment)
-client.login('ODAzNjE1MTg1Mzc2OTAzMTgw.YBAW9g.yKPc-e97FZkgQpXwP8d1Z3a9uIQ');
+client.login('Token_discord');
