@@ -11,8 +11,8 @@ class CCommandSystem
 	{
 		console.log("CCommandSystem::RegisterCCmd " + pCCmd);
 		
-		this.m_CCmdRegister[m_iRegisterCount] == {};
-		this.m_CCmdRegister[m_iRegisterCount] == pCCmd;
+		this.m_CCmdRegister[this.m_iRegisterCount] == {};
+		this.m_CCmdRegister[this.m_iRegisterCount] == pCCmd;
 		this.m_iRegisterCount++;
 	}
 	
