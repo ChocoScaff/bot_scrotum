@@ -10,7 +10,7 @@ class CCommandSystem
 	RegisterCCmd(pCCmd)
 	{
 		// c'est dégeux comme method mais j'ai que ça pour les déclaration de merde dans javascript
-		if (m_iRegisterCount < 0)
+		if (this.m_iRegisterCount < 0)
 			return;
 		
 		console.log("CCommandSystem::RegisterCCmd " + pCCmd);
