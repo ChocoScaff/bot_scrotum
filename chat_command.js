@@ -67,7 +67,7 @@ function __s_ChatCmd_legay(pChannel, args)
 	if (flSecondes <= 0)
 		szFormat += (flSecondes + " ");
 
-	if (RandomInt(0, 1)
+	if (RandomInt(0, 100) < 50)
 	{
 		szMsg = szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght)] + szFormat;
 	}
