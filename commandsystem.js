@@ -7,7 +7,7 @@ class CCommandSystem
 		m_CCmdRegister = [];
 	}
 	
-	function void RegisterCCmd(pCCmd)
+	function RegisterCCmd(pCCmd)
 	{
 		console.log("CCommandSystem::RegisterCCmd " + pCCmd);
 		
@@ -16,7 +16,7 @@ class CCommandSystem
 		m_iRegisterCount++;
 	}
 	
-	function void OnReceiveCommand(pChannel, pszCmd, pszArgs)
+	function OnReceiveCommand(pChannel, pszCmd, pszArgs)
 	{
 		console.log("CCommandSystem::OnReceiveCommand " + pChannel + " " + pszCmd + " " + pszArgs);
 		
