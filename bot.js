@@ -1,9 +1,9 @@
 const hDiscord = require('discord.js');
 const hConfig = require("./config.json");
-import CCommandSystem from './commandsystem.js';
+const hCmdSys = require(./commandsystem.js');
 
 const gClient = new hDiscord.Client();
-const gCmdSys = new CCommandSystem;
+const gCmdSys = new hCmdSys.CCommandSystem();
 
 client.on("message", function(message)
 {
