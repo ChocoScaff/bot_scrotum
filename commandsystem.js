@@ -33,8 +33,8 @@ class CCommandSystem
 	}
 	
 //private:
-	m_iRegisterCount;
-	m_CCmdRegister;
+//	m_iRegisterCount;
+//	m_CCmdRegister;
 }
 
 const sCmd = new CCommandSystem();
@@ -53,6 +53,6 @@ class CChatCommand
 	}
 	
 //private:
-	m_pszCmdName;
-	m_pfnFunc;
+//	m_pszCmdName;
+//	m_pfnFunc;
 }
