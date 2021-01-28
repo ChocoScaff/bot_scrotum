@@ -3,7 +3,6 @@ const hConfig = require("./config.json");
 const hCmdSys = require('./commandsystem.js');
 
 const gClient = new hDiscord.Client();
-const gCmdSys = new hCmdSys.CCommandSystem();
 
 client.on("message", function(message)
 {
