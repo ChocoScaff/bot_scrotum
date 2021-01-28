@@ -29,7 +29,7 @@ class CCommandSystem
 			}
 		}
 		
-		console.log("CCommandSystem::OnReceiveCommand unknown command : " pszCmd);
+		console.log("CCommandSystem::OnReceiveCommand unknown command : " + pszCmd);
 	}
 	
 //private:
