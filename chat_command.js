@@ -51,8 +51,8 @@ function __s_ChatCmd_legay(pChannel, args)
 	
 	var flTimeDiff =  Date.now() - iLastTime;
 	var flMois = Math.floor(iTimeDiff / 30.0);
-	var flJour = Math.floor((iTimeDiff / 24.0) - Math.floor(iMois));
-	var flHeures = Math.floor(iTimeDiff / 60.0) - Math.floor(flJour));
+	var flJour = Math.floor((iTimeDiff / 24.0) - Math.floor(flMois));
+	var flHeures = Math.floor((iTimeDiff / 60.0) - Math.floor(flJour));
 	var flMinutes = Math.floor((iTimeDiff / 60.0) - Math.floor(flHeures));
 	var flSecondes = Math.floor((iTimeDiff / 1000.0) - Math.floor(flMinutes));
 	
