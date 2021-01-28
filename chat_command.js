@@ -1,18 +1,18 @@
 //#define CHAT_COMMAND(cmd, pfn)
 
-function int RandomInt(iMin, iMax)
+function RandomInt(iMin, iMax)
 {
 	return ((Math.random() * (iMax - iMin)) + iMin);
 }
 
-const char szMessageArray = 
+var szMessageArray = 
 [
 	"MSG_1"
 	"MSG_2"
 ]
 
 //CHAT_COMMAND(stepipoule)
-function void __s_ChatCmd_stepipoule(pChannel, args)
+function __s_ChatCmd_stepipoule(pChannel, args)
 {
 	pChannel.send(RandomInt(0, szMessageArray.lenght));
 }
@@ -38,7 +38,7 @@ var szMessageArraylegay3 =
 	" depuis la dernière fois que <@1024> a été gay"
 ]
 //CHAT_COMMAND(legay)
-function void __s_ChatCmd_legay(pChannel, args)
+function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
