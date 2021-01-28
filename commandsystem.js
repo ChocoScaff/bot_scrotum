@@ -64,6 +64,7 @@ class CChatCommand
 //	m_pfnFunc;
 }
 
-
-new CChatCommand().m_pszCmdName = 0;
-new CChatCommand().m_pfnFunc = 0;
+// déplacer avec la déclaration des fonction
+// pas trés conventionelle mais je détèste le javascript
+//new CChatCommand().m_pszCmdName = 0;
+//new CChatCommand().m_pfnFunc = 0;
