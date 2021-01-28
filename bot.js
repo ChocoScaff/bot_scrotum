@@ -1,6 +1,7 @@
 const hDiscord = require('discord.js');
 const hConfig = require("./config.json");
 const hCmdSys = require('./commandsystem.js');
+require('chat_command.js');
 
 const gClient = new hDiscord.Client();
 
