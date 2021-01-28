@@ -18,7 +18,7 @@ var mots =
     "Mes parents mon déshérité quand j'ai acheté un macbook pour jouer à Fornite",
     "J'ai fait un cauchemar ou je mangé un Kebab pakistanais avec Dieu.",
     "Un poulpe m'a montré son scrotum dans ça camionnette ",
-    "Mon père m'as dit les noirs c'ést tous des voleurs, mais je ne comprend pas les personnes noir n'existe pas ?!"
+    "Mon père m'a dit les noirs c'est tous des voleurs, mais je ne comprend pas les personnes noir n'existe pas ?!"
     "hyperflex m'a dit que si a trente ans t'as pas de loupitaf t'as raté t'as vie"
 ];
 
