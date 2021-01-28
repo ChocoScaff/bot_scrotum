@@ -4,7 +4,7 @@ const hCmdSys = require('./commandsystem.js');
 
 const gClient = new hDiscord.Client();
 
-client.on("message", function(message)
+gClient.on("message", function(message)
 {
 	console.log("hook::OnMessage " + message);
 	
