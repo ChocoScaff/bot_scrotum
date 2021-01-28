@@ -15,9 +15,9 @@ client.on("message", function(message)
 	if (!message.content.startsWith(hConfig.CMD_PREFIX))
 		return;
 		
-	const char pszCmdLine = message.content.slice(hConfig.CMD_PREFIX.length);
-	const char pszArgs = pszCmdLine.split(' ');
-	const char pszCommand = args.shift().toLowerCase();
+	var pszCmdLine = message.content.slice(hConfig.CMD_PREFIX.length);
+	var pszArgs = pszCmdLine.split(' ');
+	var pszCommand = args.shift().toLowerCase();
 	
 	gCmdSys.OnReceiveCommand(message.channel ,pszCommand, pszArgs);
 });
