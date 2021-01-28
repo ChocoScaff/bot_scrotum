@@ -20,19 +20,19 @@ const CChatCommand(stepipoule, __s_ChatCmd_stepipoule);
 
 var iLastTime = -1;
 
-const char szMessageArraylegay1 = 
+var szMessageArraylegay1 = 
 [
 	"<@1024> est gay en fait"
 	"<@1024> est devenu gay a l'instant"
 ]
 
-const char szMessageArraylegay2 = 
+var szMessageArraylegay2 = 
 [
 	"<@1024> n'avais pas été gay depuis "
 	"<@1024> est gay, la dernière fois remonte a "
 ]
 
-const char szMessageArraylegay3 = 
+var szMessageArraylegay3 = 
 [
 	" sans que <@1024> ne fasse le gay"
 	" depuis la dernière fois que <@1024> a été gay"
@@ -46,8 +46,8 @@ function void __s_ChatCmd_legay(pChannel, args)
 		return;
 	}
 	
-	char szMsg = [];
-	char szFormat = [];
+	var szMsg = [];
+	var szFormat = [];
 	
 	float flTimeDiff =  Date.now() - iLastTime;
 	float flMois = (iTimeDiff / 30.0f);
