@@ -1,4 +1,4 @@
-export class CCommandSystem
+class CCommandSystem
 {
 //public:
 	constructor()
