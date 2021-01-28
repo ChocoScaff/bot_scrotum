@@ -43,8 +43,6 @@ function CmdSys()
 	return sCmd;
 }
 
-}
-
 var s_iCCObjectCound = 0;
 var m_pszCmdName = [];
 var m_pfnFunc = [];
