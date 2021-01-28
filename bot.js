@@ -1,6 +1,7 @@
 const hDiscord = require('discord.js');
 const hConfig = require("./config.json");
-const hCmdSys = require('./commandsystem.js');
+//const hCmdSys = require('./commandsystem.js');
+import { CmdSys } from './commandsystem.js';
 
 const gClient = new hDiscord.Client();
 const gCmdSys = new hCmdSys.CCommandSystem();
@@ -19,7 +20,7 @@ client.on("message", function(message)
 	var pszArgs = pszCmdLine.split(' ');
 	var pszCommand = args.shift().toLowerCase();
 	
-	gCmdSys.OnReceiveCommand(message.channel ,pszCommand, pszArgs);
+	CmdSys().OnReceiveCommand(message.channel ,pszCommand, pszArgs);
 });
 
 gClient.login('Token_discord');
