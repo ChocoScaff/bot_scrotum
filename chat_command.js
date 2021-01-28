@@ -1,3 +1,5 @@
+const hCmdSys = require('./commandsystem.js');
+
 //#define CHAT_COMMAND(cmd, pfn)
 
 function RandomInt(iMin, iMax)
@@ -16,7 +18,7 @@ function __s_ChatCmd_stepipoule(pChannel, args)
 {
 	pChannel.send(RandomInt(0, szMessageArray.lenght));
 }
-new CChatCommand("stepipoule", __s_ChatCmd_stepipoule);
+new hCmdSys.CChatCommand("stepipoule", __s_ChatCmd_stepipoule);
 
 var iLastTime = -1;
 
@@ -79,4 +81,4 @@ function __s_ChatCmd_legay(pChannel, args)
 	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
-new CChatCommand("legay", __s_ChatCmd_legay);
+new hCmdSys.CChatCommand("legay", __s_ChatCmd_legay);
