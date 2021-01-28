@@ -18,7 +18,7 @@ function __s_ChatCmd_stepipoule(pChannel, args)
 {
 	pChannel.send(RandomInt(0, szMessageArray.lenght));
 }
-new CChatCommand("stepipoule", __s_ChatCmd_stepipoule);
+CmdSys().RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
 
 var iLastTime = -1;
 
@@ -81,4 +81,4 @@ function __s_ChatCmd_legay(pChannel, args)
 	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
-new CChatCommand("legay", __s_ChatCmd_legay);
+CmdSys().RegisterCCmd("legay", __s_ChatCmd_legay);
