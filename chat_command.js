@@ -14,7 +14,7 @@ const char szMessageArray =
 //CHAT_COMMAND(stepipoule)
 function void __s_ChatCmd_stepipoule(pChannel, args)
 {
-	pChannel.SendMessageAsync(RandomInt(0, szMessageArray.lenght));
+	pChannel.send(RandomInt(0, szMessageArray.lenght));
 }
 const CChatCommand(stepipoule, __s_ChatCmd_stepipoule);
 
@@ -42,7 +42,7 @@ function void __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
-		pChannel.SendMessageAsync(szMessageArraylegay1[RandomInt(0, szMessageArraylegay1.lenght)]);
+		pChannel.send(szMessageArraylegay1[RandomInt(0, szMessageArraylegay1.lenght)]);
 		return;
 	}
 	
@@ -76,7 +76,7 @@ function void __s_ChatCmd_legay(pChannel, args)
 		szMsg = szFormat + szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght)];
 	}
 	
-	pChannel.SendMessageAsync(szMsg);
+	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
 const CChatCommand(legay, __s_ChatCmd_legay);
