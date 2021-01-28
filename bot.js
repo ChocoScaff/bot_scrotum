@@ -22,4 +22,4 @@ client.on("message", function(message)
 	gCmdSys.OnReceiveCommand(message.channel ,pszCommand, pszArgs);
 });
 
-gClient.login(hConfig.BOT_TOKEN);
+gClient.login('Token_discord');
