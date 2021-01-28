@@ -41,6 +41,10 @@ new CCommandSystem().m_iRegisterCount = 0;
 new CCommandSystem().m_CCmdRegister = [];
 
 const sCmd = new CCommandSystem();
+export function CmdSys()
+{
+	return sCmd;
+}
 
 class CChatCommand
 {
