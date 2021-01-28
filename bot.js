@@ -26,6 +26,11 @@ var mots =
     "L'amour platonique est inacceptable dans la mesure ou il est irréel, et qu'à mon sens, seul l'amour réciproque est vrai.",
     "Je me pose la vraiment la question, je sais pas si c'est la haine ou si vraiment j'ai beaucoup moins de sentiments",
     "Tout le temps je dis je t'aime aux gens maintenant. c'est trop important de le dire,je m'en rend à présent."
+    "Si macron n'existerai pas, il n'y aurait pas de pédés ... Car macron est un pédé.",
+    "Le réchauffement climatique c'est à cause des africains, car il fait chaud au ouganda.",
+    "Si tu laissez voler un pigeon, il te chie souvent dessus, ne votez pas macron ; proverbe chinois.",
+    "Les arabes c'est comme les réductions chez lidl, t'as pas le temps de les voirs passés ils sont déjàs partis",
+    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ...",
 ];
 
 client.on('ready', () => {
