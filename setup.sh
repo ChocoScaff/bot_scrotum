@@ -1,3 +1,6 @@
+# codes d'erreur : 
+# 0.0 erreur iconnue ; merci de la signaler sur https://github.com/ChocoScaff !
+# 0.1 Gestionnaire de paquets non valide
 # dependences : sudo, npm (qui sera installer automatiquement)
 # demande le gestionnaire de paquet et installe npm
 
@@ -20,6 +23,7 @@ else
 	echo "
 	Tu sais lire bordel !
 	 "
+	echo "error 0.1" 
 fi
 
 # Installe le bot
