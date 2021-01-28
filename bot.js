@@ -18,11 +18,11 @@ var mots =
     "Mes parents mon déshérité quand j'ai acheté un macbook pour jouer à Fornite",
     "J'ai fait un cauchemar ou je mangé un Kebab pakistanais avec Dieu.",
     "Un poulpe m'a montré son scrotum dans ça camionnette ",
-    "Mon père m'a dit les noirs c'est tous des voleurs, mais je ne comprend pas les personnes noir n'existe pas ?!"
-    "hyperflex m'a dit que si a trente ans t'as pas de loupitaf t'as raté t'as vie"
+    "Mon père m'a dit les noirs c'est tous des voleurs, mais je ne comprend pas les personnes noir n'existe pas ?!",
+    "hyperflex m'a dit que si a trente ans t'as pas de loupitaf t'as raté t'as vie",
     "De nos jours, trop de je t'aime sont prononcés comme les bonjours ",
     "Cette chanson n'a aucun sens et c'est ce qui fait kiffer",
-    "J'ai jamais présenté quelqu'un à mes parentset heuresement",
+    "J'ai jamais présenté quelqu'un à mes parents et heureusement",
     "L'amour platonique est inacceptable dans la mesure ou il est irréel, et qu'à mon sens, seul l'amour réciproque est vrai.",
     "Je me pose la vraiment la question, je sais pas si c'est la haine ou si vraiment j'ai beaucoup moins de sentiments",
     "Tout le temps je dis je t'aime aux gens maintenant. c'est trop important de le dire,je m'en rend à présent."
