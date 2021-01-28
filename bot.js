@@ -23,7 +23,7 @@ var mots =
     "De nos jours, trop de je t'aime sont prononcés comme les bonjours ",
     "Cette chanson n'a aucun sens et c'est ce qui fait kiffer",
     "J'ai jamais présenté quelqu'un à mes parentset heuresement",
-    "L'amour platonique est inacceptable dans la mesure ou il est irééel, et qu'à mon sens, seul l'amour réciproque est vrai.",
+    "L'amour platonique est inacceptable dans la mesure ou il est irréel, et qu'à mon sens, seul l'amour réciproque est vrai.",
     "Je me pose la vraiment la question, je sais pas si c'est la haine ou si vraiment j'ai beaucoup moins de sentiments",
     "Tout le temps je dis je t'aime aux gens maintenant. c'est trop important de le dire,je m'en rend à présent."
 ];
