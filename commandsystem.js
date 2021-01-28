@@ -9,6 +9,10 @@ class CCommandSystem
 	
 	RegisterCCmd(pCCmd)
 	{
+		// c'est dégeux comme method mais j'ai que ça pour les déclaration de merde dans javascript
+		if (m_iRegisterCount < 0)
+			return;
+		
 		console.log("CCommandSystem::RegisterCCmd " + pCCmd);
 		
 		this.m_CCmdRegister[this.m_iRegisterCount] == {};
@@ -37,7 +41,7 @@ class CCommandSystem
 //	m_CCmdRegister;
 }
 
-new CCommandSystem().m_iRegisterCount = 0;
+new CCommandSystem().m_iRegisterCount = -2;
 new CCommandSystem().m_CCmdRegister = [];
 
 const sCmd = new CCommandSystem();
@@ -64,7 +68,5 @@ class CChatCommand
 //	m_pfnFunc;
 }
 
-// déplacer avec la déclaration des fonction
-// pas trés conventionelle mais je détèste le javascript
-//new CChatCommand().m_pszCmdName = 0;
-//new CChatCommand().m_pfnFunc = 0;
+new CChatCommand().m_pszCmdName = 0;
+new CChatCommand().m_pfnFunc = 0;
