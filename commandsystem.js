@@ -20,7 +20,7 @@ class CCommandSystem
 	{
 		console.log("CCommandSystem::OnReceiveCommand " + pChannel + " " + pszCmd + " " + pszArgs);
 		
-		for (int i = 0; i < m_iRegisterCount; i++)
+		for (var i = 0; i < m_iRegisterCount; i++)
 		{
 			if (m_CCmdRegister[i].m_pszCmdName === pszCmd)
 			{
