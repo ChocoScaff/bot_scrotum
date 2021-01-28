@@ -7,7 +7,7 @@ function RandomInt(iMin, iMax)
 
 var szMessageArray = 
 [
-	"MSG_1"
+	"MSG_1",
 	"MSG_2"
 ];
 
@@ -22,19 +22,19 @@ var iLastTime = -1;
 
 var szMessageArraylegay1 = 
 [
-	"<@1024> est gay en fait"
+	"<@1024> est gay en fait",
 	"<@1024> est devenu gay a l'instant"
 ];
 
 var szMessageArraylegay2 = 
 [
-	"<@1024> n'avais pas été gay depuis "
+	"<@1024> n'avais pas été gay depuis ",
 	"<@1024> est gay, la dernière fois remonte a "
 ];
 
 var szMessageArraylegay3 = 
 [
-	" sans que <@1024> ne fasse le gay"
+	" sans que <@1024> ne fasse le gay",
 	" depuis la dernière fois que <@1024> a été gay"
 ];
 //CHAT_COMMAND(legay)
