@@ -49,12 +49,12 @@ function void __s_ChatCmd_legay(pChannel, args)
 	var szMsg = [];
 	var szFormat = [];
 	
-	float flTimeDiff =  Date.now() - iLastTime;
-	float flMois = (iTimeDiff / 30.0f);
-	float flJour = (iTimeDiff / 24.0f) - Math.floor(iMois);
-	float flHeures = (iTimeDiff / 60.0f) - Math.floor(flJour);
-	float flMinutes = (iTimeDiff / 60.0f) - Math.floor(flHeures);
-	float flSecondes = (iTimeDiff / 1000.0f) - Math.floor(flMinutes);
+	var flTimeDiff =  Date.now() - iLastTime;
+	var flMois = Math.floor(iTimeDiff / 30.0f);
+	var flJour = Math.floor((iTimeDiff / 24.0f) - Math.floor(iMois));
+	var flHeures = Math.floor(iTimeDiff / 60.0f) - Math.floor(flJour));
+	var flMinutes = Math.floor((iTimeDiff / 60.0f) - Math.floor(flHeures));
+	var flSecondes = Math.floor((iTimeDiff / 1000.0f) - Math.floor(flMinutes));
 	
 	if (flMois <= 0)
 		szFormat += (flMois + " mois, ");
