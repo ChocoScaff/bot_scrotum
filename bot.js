@@ -1,6 +1,6 @@
 const hDiscord = require('discord.js');
 const hConfig = require("./config.json");
-const hCmdSys = require(./commandsystem.js');
+const hCmdSys = require('./commandsystem.js');
 
 const gClient = new hDiscord.Client();
 const gCmdSys = new hCmdSys.CCommandSystem();
