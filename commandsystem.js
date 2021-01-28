@@ -1,34 +1,30 @@
+
+
+var m_iRegisterCount = -2;
+var m_CCmdRegister = [];
 class CCommandSystem
 {
 //public:
-	constructor()
-	{
-		this.m_iRegisterCount = 0;
-		this.m_CCmdRegister = [];
-	}
+	constructor() { }
 	
 	RegisterCCmd(pCCmd)
 	{
-		// c'est dégeux comme method mais j'ai que ça pour les déclaration de merde dans javascript
-		if (this.m_iRegisterCount < 0)
-			return;
+		console.log("CCommandSystem::RegisterCCmd " + pCCmd.pfnFunc + "_" + pCCmd.pszCmdName);
 		
-		console.log("CCommandSystem::RegisterCCmd " + pCCmd);
-		
-		this.m_CCmdRegister[this.m_iRegisterCount] == {};
-		this.m_CCmdRegister[this.m_iRegisterCount] == pCCmd;
-		this.m_iRegisterCount++;
+		m_CCmdRegister[m_iRegisterCount] == {};
+		m_CCmdRegister[m_iRegisterCount] == pCCmd;
+		m_iRegisterCount++;
 	}
 	
 	OnReceiveCommand(pChannel, pszCmd, pszArgs)
 	{
 		console.log("CCommandSystem::OnReceiveCommand " + pChannel + " " + pszCmd + " " + pszArgs);
 		
-		for (var i = 0; i < this.m_iRegisterCount; i++)
+		for (var i = 0; i < m_iRegisterCount; i++)
 		{
-			if (this.m_CCmdRegister[i].m_pszCmdName === pszCmd)
+			if (m_CCmdRegister[i].m_pszCmdName === pszCmd)
 			{
-				this.m_CCmdRegister[i].m_pfnFunc(pChannel, pszArgs);
+				m_CCmdRegister[i].m_pfnFunc(pChannel, pszArgs);
 				return;
 			}
 		}
@@ -41,15 +37,17 @@ class CCommandSystem
 //	m_CCmdRegister;
 }
 
-new CCommandSystem().m_iRegisterCount = -2;
-new CCommandSystem().m_CCmdRegister = [];
-
 const sCmd = new CCommandSystem();
 function CmdSys()
 {
 	return sCmd;
 }
 
+}
+
+var s_iCCObjectCound = 0;
+var m_pszCmdName = [];
+var m_pfnFunc = [];
 class CChatCommand
 {
 //public:
@@ -57,8 +55,8 @@ class CChatCommand
 	{
 		console.log("CChatCommand::RegisterCCmd " + pfnFunc + "_" + pszCmdName);
 		
-		this.m_pszCmdName = pszCmdName;
-		this.m_pfnFunc = pfnFunc;
+		m_pszCmdName[s_iCCObjectCound] = pszCmdName;
+		m_pfnFunc[s_iCCObjectCound] = pfnFunc;
 		
 		sCmd.RegisterCCmd(this);
 	}
@@ -67,6 +65,3 @@ class CChatCommand
 //	m_pszCmdName;
 //	m_pfnFunc;
 }
-
-new CChatCommand().m_pszCmdName = 0;
-new CChatCommand().m_pfnFunc = 0;
