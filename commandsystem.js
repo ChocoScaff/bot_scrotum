@@ -1,4 +1,4 @@
-class CCommandSystem
+export class CCommandSystem
 {
 //public:
 	constructor()
@@ -55,9 +55,4 @@ class CChatCommand
 //private:
 	char m_pszCmdName;
 	var m_pfnFunc;
-}
-
-export function CmdSys()
-{
-	return sCmd;
 }
