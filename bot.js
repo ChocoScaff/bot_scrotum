@@ -25,7 +25,7 @@ gClient.on("message",
 			
 		var pszCmdLine = message.content.slice(hConfig.CMD_PREFIX.length);
 		var pszArgs = pszCmdLine.split(' ');
-		var pszCommand = args.shift().toLowerCase();
+		var pszCommand = pszArgs.shift().toLowerCase();
 		
 		gCmdSys.OnReceiveCommand(message.channel, pszCommand, pszArgs);
 	}
