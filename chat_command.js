@@ -1,11 +1,31 @@
-const hCmdSys = require('./commandsystem.js');
+console.log("chat_command::Scope entry");
 
-//#define CHAT_COMMAND(cmd, pfn)
+const hCmdSys = require("./commandsystem.js");
+
+console.log("chat_command::Scope include");
+
+var gCmdSys = hCmdSys.gCommandSystem;
+
+console.log("chat_command::Scope declare");
 
 function RandomInt(iMin, iMax)
 {
 	return ((Math.random() * (iMax - iMin)) + iMin);
 }
+
+/*
+1. variable 
+var message = "message";
+
+2. fonction
+function Func(pChannel, args)
+{
+	...
+}
+
+3. registre
+CmdSys().RegisterCCmd("nom de la commande sans éspace", Func);
+*/
 
 var szMessageArray = 
 [
@@ -13,12 +33,10 @@ var szMessageArray =
 	"MSG_2"
 ];
 
-//CHAT_COMMAND(stepipoule)
 function __s_ChatCmd_stepipoule(pChannel, args)
 {
 	pChannel.send(RandomInt(0, szMessageArray.lenght));
 }
-CmdSys().RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
 
 var iLastTime = -1;
 
@@ -39,7 +57,7 @@ var szMessageArraylegay3 =
 	" sans que <@1024> ne fasse le gay",
 	" depuis la dernière fois que <@1024> a été gay"
 ];
-//CHAT_COMMAND(legay)
+
 function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
@@ -81,4 +99,17 @@ function __s_ChatCmd_legay(pChannel, args)
 	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
-CmdSys().RegisterCCmd("legay", __s_ChatCmd_legay);
+
+function __s_ChatCmd_list(pChannel, args)
+{
+	var szMsg = gCmdSys.PrintCommand();
+	pChannel.send(szMsg);
+}
+
+console.log("chat_command::Scope declare");
+
+gCmdSys.RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
+gCmdSys.RegisterCCmd("legay", __s_ChatCmd_legay);
+gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
+
+console.log("chat_command::Scope startup");
