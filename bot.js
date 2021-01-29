@@ -15,8 +15,6 @@ console.log("bot::Scope declare");
 gClient.on("message",
 	function(message)
 	{
-		console.log("Client::OnMessage " + message);
-		
 		if (message.author.bot)
 			return;
 		
