@@ -56,7 +56,7 @@ var szMessageArraystepipoule =
 
 function __s_ChatCmd_stepipoule(pChannel, args)
 {
-	pChannel.send(RandomInt(0, szMessageArraystepipoule.lenght - 1));
+	pChannel.send(szMessageArraystepipoule[RandomInt(0, szMessageArraystepipoule.lenght - 1)]);
 }
 
 var iLastTime = -1;
