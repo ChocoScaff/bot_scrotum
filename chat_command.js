@@ -10,7 +10,7 @@ console.log("chat_command::Scope declare");
 
 function RandomInt(iMin, iMax)
 {
-	return ((Math.random() * (iMax - iMin)) + iMin);
+	return Math.floor((Math.random() * (iMax - iMin)) + iMin);
 }
 
 /*
@@ -27,7 +27,7 @@ function Func(pChannel, args)
 CmdSys().RegisterCCmd("nom de la commande sans éspace", Func);
 */
 
-var szMessageArray = 
+var szMessageArraystepipoule = 
 [
     "Le racisme c'est la peur des étrangers, donc si y'avaient moins d'étrangers y'aurait moins racisme.",
     "L'amour ça fait mal au coeur et au cul.",
@@ -56,7 +56,7 @@ var szMessageArray =
 
 function __s_ChatCmd_stepipoule(pChannel, args)
 {
-	pChannel.send(RandomInt(0, szMessageArray.lenght));
+	pChannel.send(RandomInt(0, szMessageArraystepipoule.lenght - 1));
 }
 
 var iLastTime = -1;
@@ -83,12 +83,12 @@ function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
-		pChannel.send(szMessageArraylegay1[RandomInt(0, szMessageArraylegay1.lenght)]);
+		pChannel.send(szMessageArraylegay1[RandomInt(0, szMessageArraylegay1.lenght - 1)]);
 		return;
 	}
 	
-	var szMsg = [];
-	var szFormat = [];
+	var szMsg = "";
+	var szFormat = "";
 	
 	var flTimeDiff =  Date.now() - iLastTime;
 	var flMois = Math.floor(iTimeDiff / 30.0);
@@ -110,11 +110,11 @@ function __s_ChatCmd_legay(pChannel, args)
 
 	if (RandomInt(0, 100) < 50)
 	{
-		szMsg = szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght)] + szFormat;
+		szMsg = szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght - 1)] + szFormat;
 	}
 	else
 	{
-		szMsg = szFormat + szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght)];
+		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, szMessageArraylegay3.lenght - 1)];
 	}
 	
 	pChannel.send(szMsg);
