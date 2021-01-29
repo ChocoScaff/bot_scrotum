@@ -10,7 +10,26 @@ console.log("chat_command::Scope declare");
 
 function RandomInt(iMin, iMax)
 {
-	return Math.floor((Math.random() * (iMax - iMin)) + iMin);
+	var range = iMax - iMin;
+	var random = Math.random();
+	var uniform = random * range;
+	var trunc = Math.floor(uniform);
+	console.log("min " + iMin + " max " + iMax + " range " + range + " random " + random + " uniform " + uniform + " trunc " + trunc);
+	
+	return trunc;
+}
+
+function ARRAY_SIZE(pArray)
+{
+	var size = 0,
+	key;
+	for (key in pArray)
+	{
+		if (pArray.hasOwnProperty(key))
+			size++;
+	}
+	
+	return size;
 }
 
 /*
@@ -27,7 +46,7 @@ function Func(pChannel, args)
 CmdSys().RegisterCCmd("nom de la commande sans éspace", Func);
 */
 
-var szMessageArraystepipoule = 
+const szMessageArraystepipoule = 
 [
     "Le racisme c'est la peur des étrangers, donc si y'avaient moins d'étrangers y'aurait moins racisme.",
     "L'amour ça fait mal au coeur et au cul.",
@@ -51,12 +70,12 @@ var szMessageArraystepipoule =
     "Le réchauffement climatique c'est à cause des africains, car il fait chaud au ouganda.",
     "Si tu laissez voler un pigeon, il te chie souvent dessus, ne votez pas macron ; proverbe chinois.",
     "Les arabes c'est comme les réductions chez lidl, t'as pas le temps de les voirs passés ils sont déjàs partis",
-    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ...",
+    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ..."
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
 {
-	pChannel.send(szMessageArraystepipoule[RandomInt(0, szMessageArraystepipoule.lenght - 1)]);
+	pChannel.send(szMessageArraystepipoule[RandomInt(0, ARRAY_SIZE(szMessageArraystepipoule)]);
 }
 
 var iLastTime = -1;
@@ -83,7 +102,7 @@ function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
-		pChannel.send(szMessageArraylegay1[RandomInt(0, szMessageArraylegay1.lenght - 1)]);
+		pChannel.send(szMessageArraylegay1[RandomInt(0, ARRAY_SIZE(szMessageArraylegay1)]);
 		return;
 	}
 	
@@ -110,11 +129,11 @@ function __s_ChatCmd_legay(pChannel, args)
 
 	if (RandomInt(0, 100) < 50)
 	{
-		szMsg = szMessageArraylegay2[RandomInt(0, szMessageArraylegay2.lenght - 1)] + szFormat;
+		szMsg = szMessageArraylegay2[RandomInt(0, ARRAY_SIZE(szMessageArraylegay2)] + szFormat;
 	}
 	else
 	{
-		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, szMessageArraylegay3.lenght - 1)];
+		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, ARRAY_SIZE(szMessageArraylegay3)];
 	}
 	
 	pChannel.send(szMsg);
