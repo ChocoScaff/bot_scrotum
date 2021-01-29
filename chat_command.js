@@ -14,7 +14,7 @@ function RandomInt(iMin, iMax)
 	var random = Math.random();
 	var uniform = random * range;
 	var trunc = Math.floor(uniform);
-	console.log("min " + iMin + " max " + iMax + " range " + range + " random " + random + " uniform " + uniform + " trunc " + trunc);
+//	console.log("min " + iMin + " max " + iMax + " range " + range + " random " + random + " uniform " + uniform + " trunc " + trunc);
 	
 	return trunc;
 }
@@ -75,7 +75,7 @@ const szMessageArraystepipoule =
 
 function __s_ChatCmd_stepipoule(pChannel, args)
 {
-	pChannel.send(szMessageArraystepipoule[RandomInt(0, ARRAY_SIZE(szMessageArraystepipoule)]);
+	pChannel.send(szMessageArraystepipoule[RandomInt(0, ARRAY_SIZE(szMessageArraystepipoule))]);
 }
 
 var iLastTime = -1;
@@ -102,7 +102,7 @@ function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
-		pChannel.send(szMessageArraylegay1[RandomInt(0, ARRAY_SIZE(szMessageArraylegay1)]);
+		pChannel.send(szMessageArraylegay1[RandomInt(0, ARRAY_SIZE(szMessageArraylegay1))]);
 		return;
 	}
 	
@@ -129,11 +129,11 @@ function __s_ChatCmd_legay(pChannel, args)
 
 	if (RandomInt(0, 100) < 50)
 	{
-		szMsg = szMessageArraylegay2[RandomInt(0, ARRAY_SIZE(szMessageArraylegay2)] + szFormat;
+		szMsg = szMessageArraylegay2[RandomInt(0, ARRAY_SIZE(szMessageArraylegay2))] + szFormat;
 	}
 	else
 	{
-		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, ARRAY_SIZE(szMessageArraylegay3)];
+		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, ARRAY_SIZE(szMessageArraylegay3))];
 	}
 	
 	pChannel.send(szMsg);
