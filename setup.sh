@@ -33,6 +33,7 @@ Installation en cours ....
  \e[0m"
 npm init -y
 npm install --save discord.js
+sudo npm install forever -g
 
 echo -e "\e[1;35m 
 Installation finie
