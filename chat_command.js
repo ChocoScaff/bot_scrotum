@@ -142,8 +142,8 @@ function __s_ChatCmd_legay(pChannel, args)
 		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, ARRAY_SIZE(szMessageArraylegay3))];
 	}
 	
-	console.log("diff " + flTimeDiff + ", mois " + flMois + ", jour " + flJour + ", heure " + flHeures + ", minute " + flMinutes + ", sec " + flSecondes);
-	console.log(szMsg);
+//	console.log("diff " + flTimeDiff + ", mois " + flMois + ", jour " + flJour + ", heure " + flHeures + ", minute " + flMinutes + ", sec " + flSecondes);
+//	console.log(szMsg);
 	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
