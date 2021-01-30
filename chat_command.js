@@ -70,7 +70,8 @@ const szMessageArraystepipoule =
     "Le réchauffement climatique c'est à cause des africains, car il fait chaud au ouganda.",
     "Si tu laissez voler un pigeon, il te chie souvent dessus, ne votez pas macron ; proverbe chinois.",
     "Les arabes c'est comme les réductions chez lidl, t'as pas le temps de les voirs passés ils sont déjàs partis",
-    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ..."
+    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ...",
+    "Les racistes ils aiment trop crier FORT quand on les frappe en mode ils comprennent pas pourquoi"
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
