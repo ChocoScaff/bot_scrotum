@@ -102,6 +102,7 @@ function __s_ChatCmd_legay(pChannel, args)
 {
 	if (iLastTime <= 0)
 	{
+		iLastTime = Date.now();
 		pChannel.send(szMessageArraylegay1[RandomInt(0, ARRAY_SIZE(szMessageArraylegay1))]);
 		return;
 	}
