@@ -31,7 +31,7 @@ gClient.on("message",
 
 console.log("bot::Scope hook");
 
-gClient.login('Token_discord');
+gClient.login('Token_discord'); // Entré votre Token
 
 console.log("bot::Scope startup");
 
