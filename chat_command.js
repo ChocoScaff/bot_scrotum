@@ -70,8 +70,7 @@ const szMessageArraystepipoule =
     "Le réchauffement climatique c'est à cause des africains, car il fait chaud au ouganda.",
     "Si tu laissez voler un pigeon, il te chie souvent dessus, ne votez pas macron ; proverbe chinois.",
     "Les arabes c'est comme les réductions chez lidl, t'as pas le temps de les voirs passés ils sont déjàs partis",
-    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ...",
-    "Les racistes ils aiment trop crier FORT quand on les frappe en mode ils comprennent pas pourquoi"
+    "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ..."
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
@@ -111,23 +110,28 @@ function __s_ChatCmd_legay(pChannel, args)
 	var szMsg = "";
 	var szFormat = "";
 	
-	var flTimeDiff =  Date.now() - iLastTime;
-	var flMois = Math.floor(flTimeDiff / 30.0);
-	var flJour = Math.floor((flTimeDiff / 24.0) - Math.floor(flMois));
-	var flHeures = Math.floor((flTimeDiff / 60.0) - Math.floor(flJour));
-	var flMinutes = Math.floor((flTimeDiff / 60.0) - Math.floor(flHeures));
-	var flSecondes = Math.floor((flTimeDiff / 1000.0) - Math.floor(flMinutes));
+	var flTimeDiff =  Math.floor((Date.now() - iLastTime) / 1000);
+	var flMois = Math.floor(flTimeDiff / (30.0 * 24.0 * 60.0 * 60.0));
+	var flJour = Math.floor((flTimeDiff / (24.0* 60.0 * 60.0)));
+	var flHeures = Math.floor((flTimeDiff / (60.0* 60.0)));
+	var flMinutes = Math.floor((flTimeDiff / 60.0));
+	var flSecondes = Math.floor(flTimeDiff);
 	
-	if (flMois <= 0)
+	flSecondes -= (flMinutes * 60.0);
+	flMinutes -= (flHeures * 60.0);
+	flHeures -= (flJour * 24.0);
+	flJour -= (flMois * 30.0);
+	
+	if (flMois > 0)
 		szFormat += (flMois + " mois, ");
-	if (flJour <= 0)
+	if (flJour > 0)
 		szFormat += (flJour + " jour, ");
-	if (flHeures <= 0)
+	if (flHeures > 0)
 		szFormat += (flHeures + " heures et ");
-	if (flMinutes <= 0)
-		szFormat += (flMinutes + " minutes ");
-	if (flSecondes <= 0)
-		szFormat += (flSecondes + " ");
+	if (flMinutes > 0)
+		szFormat += (flMinutes + " minutes ,");
+		
+	szFormat += (flSecondes + " secondes");
 
 	if (RandomInt(0, 100) < 50)
 	{
@@ -138,6 +142,8 @@ function __s_ChatCmd_legay(pChannel, args)
 		szMsg = szFormat + szMessageArraylegay3[RandomInt(0, ARRAY_SIZE(szMessageArraylegay3))];
 	}
 	
+	console.log("diff " + flTimeDiff + ", mois " + flMois + ", jour " + flJour + ", heure " + flHeures + ", minute " + flMinutes + ", sec " + flSecondes);
+	console.log(szMsg);
 	pChannel.send(szMsg);
 	iLastTime = Date.now();
 }
