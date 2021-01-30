@@ -4,7 +4,7 @@ Ouvrez votre terminal `linux` ou `tty` et téléchargez le git avec la commande 
 Entrez dans le dossier `cd ~/bot_stepipoule` puis tapez `chmod +x setup.sh` puis `bash setup.sh`. 
 Vous aurez juste à chercher votre Token discord sur le lien suivant https://discord.com/developers/ et faire `add bot` puis copiez le Token du bot.
 Allez dans `OAuth2` puis cliquez dans`scope` sur `bot` puis dans `bot permissions` cliquez sur `administrator` copiez l'url sur votre navigateur pour ajouter le bot sur un de vos serveurs.
-Mettez votre Token dans le fichier `bot.js` à l'emplacement se trouve à la fin.
+Mettez votre Token dans le fichier `bot.js` à l'emplacement se trouvant à la fin du fichier `'Token_discord'`.
 Entrez la commande `node bot.js` ou `forever start bot.js` bravo sinon vérifiez les étapes précédentes.
 Entrez `!list` sur votre serveur discord.
 
