@@ -72,7 +72,9 @@ const szMessageArraystepipoule =
     "Les arabes c'est comme les réductions chez lidl, t'as pas le temps de les voirs passés ils sont déjàs partis",
     "Le deuxième film d'une saga c'est toujours la même merde que le premier, mais en pire ...",
     "Les racistes ils aiment trop crier FORT quand on les frappe en mode ils comprennent pas pourquoi",
-    "Ceux qui veulent poster des photos de gonzesses qui veulent se faire sauter : On accepte ou on s'en va, mais on ne sort pas des trucs du style 'Mec, c'est pas un serveur pour voir du porno, va sur PornHub'. Arrêtez de vouloir tout le temps plier les gens selon votre vision du monde. 	
+    "Ceux qui veulent poster des photos de gonzesses qui veulent se faire sauter : On accepte ou on s'en va, mais on ne sort pas des trucs du style ''Mec, c'est pas un serveur pour voir du porno, va sur PornHub''. Arrêtez de vouloir tout le temps plier les gens selon votre vision du monde.,
+    "Hier j'ai appelé mon wifi ''hack me if you can''. Aujourd'hui il sappelle ''challenge accepted''. ",
+    "Pour vous je suis une Poule ou un Poulet ? Attention à pas confondre genre et identité de genre !!"	
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
