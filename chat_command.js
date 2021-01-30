@@ -149,6 +149,22 @@ function __s_ChatCmd_legay(pChannel, args)
 	iLastTime = Date.now();
 }
 
+function __s_ChatCmd_pileouface(pChannel, args)
+{
+    var RNG;
+    {
+    RNG = RandomInt(0,2); // nombre aléatoire
+    if (RNG == 0)
+    {
+    pChannel.send("pile"); // Prende un mots dans la variable et l'envoie sur le serveur
+    }
+    if (RNG == 1)
+    {
+    pChannel.send("face"); // Prende un mots dans la variable et l'envoie sur le serveur
+    }
+    }
+}
+
 function __s_ChatCmd_list(pChannel, args)
 {
 	var szMsg = gCmdSys.PrintCommand();
@@ -156,9 +172,10 @@ function __s_ChatCmd_list(pChannel, args)
 }
 
 console.log("chat_command::Scope declare");
-
+//Les registre chat que peuve faire le bot
 gCmdSys.RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
 gCmdSys.RegisterCCmd("legay", __s_ChatCmd_legay);
 gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
+gCmdSys.RegisterCCmd("pileouface", __s_ChatCmd_pileouface);
 
 console.log("chat_command::Scope startup");
