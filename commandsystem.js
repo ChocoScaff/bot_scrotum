@@ -15,25 +15,14 @@ class CCommandSystem
 	{
 		this.m_iRegisterCount = 0;
 		this.m_CCmdRegister = [];
-		
-		this.m_bCanUseSystem = false;
 	}
 	
-	IsValid()
-	{
-		return this.m_bCanUseSystem;
-	}
-	
-	TryValidate(ServerID)
-	{
-		//var ServerID = client.channels[channelID].guild_id;
-		console.log("CCommandSystem::TryValidate id :" + ServerID +" == " + hConfig.USER_KEY);
+	IsValid(ServerID)
+	{		
 		if (ServerID == hConfig.USER_KEY && hConfig.USER_KEY == 404956384040321024)
-		{
-			this.m_bCanUseSystem = true;
 			return true;
-		}
 		
+		console.log("CCommandSystem::TryValidate invalid id :" + ServerID +" == " + hConfig.USER_KEY);
 		return false;
 	}
 	
@@ -50,9 +39,9 @@ class CCommandSystem
 		this.m_iRegisterCount++;
 	}
 	
-	OnReceiveCommand(pChannel, pszCmd, pszArgs)
+	OnReceiveCommand(pServer, pChannel, pszCmd, pszArgs)
 	{
-		if (this.m_bValidateUsage == false)
+		if (IsValid(pServer) == false)
 			return;
 		
 		for (var i = 0; i < this.m_iRegisterCount; i++)
