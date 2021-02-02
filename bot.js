@@ -20,20 +20,12 @@ gClient.on("message",
 		
 		if (!message.content.startsWith(hConfig.CMD_PREFIX))
 			return;
-	
-		if (gCmdSys.IsValid() == false)
-		{
-			if (gCmdSys.TryValidate(message.guild.id) == false)
-			{
-				return;
-			}
-		}
 			
 		var pszCmdLine = message.content.slice(hConfig.CMD_PREFIX.length);
 		var pszArgs = pszCmdLine.split(' ');
 		var pszCommand = pszArgs.shift().toLowerCase();
 		
-		gCmdSys.OnReceiveCommand(message.channel, pszCommand, pszArgs);
+		gCmdSys.OnReceiveCommand(message.guild.id, message.channel, pszCommand, pszArgs);
 	}
 );
 
