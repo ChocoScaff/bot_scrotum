@@ -24,9 +24,9 @@ class CCommandSystem
 		return this.m_bCanUseSystem;
 	}
 	
-	TryValidate()
+	TryValidate(client, channelID)
 	{
-		var ServerID = bot.channels[channelID].guild_id;
+		var ServerID = client.channels[channelID].guild_id;
 		if (ServerID == hConfig.USER_KEY && hConfig.USER_KEY == 404956384040321024)
 		{
 			this.m_bCanUseSystem = true;
