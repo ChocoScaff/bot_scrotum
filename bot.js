@@ -20,6 +20,14 @@ gClient.on("message",
 		
 		if (!message.content.startsWith(hConfig.CMD_PREFIX))
 			return;
+	
+		if (gCmdSys.IsValid() == false)
+		{
+			if (gCmdSys.TryValidate(gClient, message.channel) == false)
+			{
+				return;
+			}
+		}
 			
 		var pszCmdLine = message.content.slice(hConfig.CMD_PREFIX.length);
 		var pszArgs = pszCmdLine.split(' ');
