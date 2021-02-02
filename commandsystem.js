@@ -24,9 +24,9 @@ class CCommandSystem
 		return this.m_bCanUseSystem;
 	}
 	
-	TryValidate(client, channelID)
+	TryValidate(ServerID)
 	{
-		var ServerID = client.channels[channelID].guild_id;
+		//var ServerID = client.channels[channelID].guild_id;
 		console.log("CCommandSystem::TryValidate id :" + ServerID +" == " + hConfig.USER_KEY);
 		if (ServerID == hConfig.USER_KEY && hConfig.USER_KEY == 404956384040321024)
 		{
