@@ -41,7 +41,7 @@ class CCommandSystem
 	
 	OnReceiveCommand(pServer, pChannel, pszCmd, pszArgs)
 	{
-		if (IsValid(pServer) == false)
+		if (this.IsValid(pServer) == false)
 			return;
 		
 		for (var i = 0; i < this.m_iRegisterCount; i++)
