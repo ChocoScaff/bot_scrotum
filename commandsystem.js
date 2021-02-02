@@ -1,3 +1,5 @@
+const hConfig = require("./config.json");
+
 class CChatCommand
 {	
 	constructor(pszCmdName, pfnFunc)
@@ -14,12 +16,24 @@ class CCommandSystem
 		this.m_iRegisterCount = 0;
 		this.m_CCmdRegister = [];
 		
-		this.m_bValidateUsage = false;
+		this.m_bCanUseSystem = false;
 	}
 	
-	ValidateUser()
+	IsValid()
 	{
-		this.m_bValidateUsage = true;
+		return this.m_bCanUseSystem;
+	}
+	
+	TryValidate()
+	{
+		var ServerID = bot.channels[channelID].guild_id;
+		if (ServerID == hConfig.USER_KEY && hConfig.USER_KEY == 404956384040321024)
+		{
+			this.m_bCanUseSystem = true;
+			return true;
+		}
+		
+		return false;
 	}
 	
 	RegisterCCmd(pszCmdName, pfnFunc)
