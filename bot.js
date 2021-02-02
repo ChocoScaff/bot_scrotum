@@ -23,7 +23,7 @@ gClient.on("message",
 	
 		if (gCmdSys.IsValid() == false)
 		{
-			if (gCmdSys.TryValidate(gClient, message.channel) == false)
+			if (gCmdSys.TryValidate(message.guild.id) == false)
 			{
 				return;
 			}
