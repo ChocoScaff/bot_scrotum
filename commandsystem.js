@@ -13,10 +13,20 @@ class CCommandSystem
 	{
 		this.m_iRegisterCount = 0;
 		this.m_CCmdRegister = [];
+		
+		this.m_bValidateUsage = false;
+	}
+	
+	ValidateUser()
+	{
+		this.m_bValidateUsage = true;
 	}
 	
 	RegisterCCmd(pszCmdName, pfnFunc)
 	{
+		if (this.m_bValidateUsage == false)
+			return;
+		
 		console.log("CCommandSystem::RegisterCCmd " + pszCmdName + " at " + this.m_iRegisterCount);
 		
 		var ChatCmd = new CChatCommand(pszCmdName, pfnFunc);
@@ -27,6 +37,9 @@ class CCommandSystem
 	
 	OnReceiveCommand(pChannel, pszCmd, pszArgs)
 	{
+		if (this.m_bValidateUsage == false)
+			return;
+		
 		for (var i = 0; i < this.m_iRegisterCount; i++)
 		{
 			var ChatCmd = this.m_CCmdRegister[i];
