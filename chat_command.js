@@ -74,7 +74,8 @@ const szMessageArraystepipoule =
     "Les racistes ils aiment trop crier FORT quand on les frappe en mode ils comprennent pas pourquoi",
     "Ceux qui veulent poster des photos de gonzesses qui veulent se faire sauter : On accepte ou on s'en va, mais on ne sort pas des trucs du style ''Mec, c'est pas un serveur pour voir du porno, va sur PornHub''. Arrêtez de vouloir tout le temps plier les gens selon votre vision du monde.",
     "Hier j'ai appelé mon wifi ''hack me if you can''. Aujourd'hui il sappelle ''challenge accepted''. ",
-    "Pour vous je suis une Poule ou un Poulet ? Attention à pas confondre genre et identité de genre !!"	
+    "Pour vous je suis une Poule ou un Poulet ? Attention à pas confondre genre et identité de genre !!",
+    "La vie c'est comme un penis, elle est courte et les femmes la rendent dure sans raison"
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
@@ -174,11 +175,50 @@ function __s_ChatCmd_list(pChannel, args)
 	pChannel.send(szMsg);
 }
 
+var szMessageArraycomplot1 = 
+[
+	"La 5G ",
+	"La covid 19 ",
+	"Les furrys ",
+	"Le curry club ",
+	"Les feministes "
+];
+
+var szMessageArraycomplot2 = 
+[
+	" est/sont un complot ",
+	" est/sont une ruse ",
+	" est/sont une mascarade ",
+	" est/sont une hallucination collective "
+];
+
+var szMessageArraycomplot3 = 
+[
+	" pour restaurer l'URSS.",
+	" pour vaincre le capitalisme.",
+	" pour rendre <@694832068105994273> gay",
+	" Pour empêcher la sortie de stepipoule épisode 3",
+	" pour tuer les <@&760173621691547708>",
+	" pour rendre impuissant les <@&744996855133503569>",
+	" afin de tuer les <@&732643483684438107>"
+];
+
+function __s_ChatCmd_complot(pChannel, args)
+{
+	var message = szMessageArraycomplot1[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot1))] + szMessageArraycomplot2[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot2))] + szMessageArraycomplot3[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot3))];
+	pChannel.send(message);
+	//pChannel.send(szMessageArraycomplot1[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot1))]);
+	//pChannel.send(szMessageArraycomplot2[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot2))]);
+	//pChannel.send(szMessageArraycomplot3[RandomInt(0, ARRAY_SIZE(szMessageArraycomplot3))]);
+}
+
 console.log("chat_command::Scope declare");
 //Les registre chat que peuve faire le bot
 gCmdSys.RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
 gCmdSys.RegisterCCmd("legay", __s_ChatCmd_legay);
 gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
 gCmdSys.RegisterCCmd("pileouface", __s_ChatCmd_pileouface);
+gCmdSys.RegisterCCmd("complot", __s_ChatCmd_complot);
+
 
 console.log("chat_command::Scope startup");
