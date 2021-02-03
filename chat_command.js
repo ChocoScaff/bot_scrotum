@@ -182,7 +182,11 @@ var szMessageArraycomplot1 =
 	"La covid 19 ",
 	"Les furrys ",
 	"Le curry club ",
-	"Les feministes "
+	"Les feministes ",
+	"Les lbgt+",
+	"Les islamos gauchiste",
+	"Les juifs",
+	"Les gacha life"
 ];
 
 var szMessageArraycomplot2 = 
@@ -190,7 +194,10 @@ var szMessageArraycomplot2 =
 	" est/sont un complot ",
 	" est/sont une ruse ",
 	" est/sont une mascarade ",
-	" est/sont une hallucination collective "
+	" est/sont une hallucination collective ",
+	" est/sont une machination",
+	" est/sont un guide",
+	" est/sont une conspiration"
 ];
 
 var szMessageArraycomplot3 = 
@@ -198,10 +205,12 @@ var szMessageArraycomplot3 =
 	" pour restaurer l'URSS.",
 	" pour vaincre le capitalisme.",
 	" pour rendre <@694832068105994273> gay",
-	" Pour empêcher la sortie de stepipoule épisode 3",
+	" pour empêcher la sortie de stepipoule épisode 3",
 	" pour tuer les <@&760173621691547708>",
 	" pour rendre impuissant les <@&744996855133503569>",
-	" afin de tuer les <@&732643483684438107>"
+	" afin de tuer les <@&732643483684438107>",
+	" pour ressuciter Hitler",
+	" pour que le Makron domine le monde"
 ];
 
 function __s_ChatCmd_complot(pChannel, args)
