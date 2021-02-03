@@ -75,7 +75,8 @@ const szMessageArraystepipoule =
     "Ceux qui veulent poster des photos de gonzesses qui veulent se faire sauter : On accepte ou on s'en va, mais on ne sort pas des trucs du style ''Mec, c'est pas un serveur pour voir du porno, va sur PornHub''. Arrêtez de vouloir tout le temps plier les gens selon votre vision du monde.",
     "Hier j'ai appelé mon wifi ''hack me if you can''. Aujourd'hui il sappelle ''challenge accepted''. ",
     "Pour vous je suis une Poule ou un Poulet ? Attention à pas confondre genre et identité de genre !!",
-    "La vie c'est comme un penis, elle est courte et les femmes la rendent dure sans raison"
+    "La vie c'est comme un penis, elle est courte et les femmes la rendent dure sans raison",
+    "les hommes hétérosexuels savent très bien que la misogynie ça dégoûte les femmes mais ils continuent à faire des blagues misogynes pour avoir la validations des autres hommes ? c’est juste que vous êtes homosexuels je pense" 
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
