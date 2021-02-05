@@ -1,3 +1,6 @@
+// Auteur ChocoScaff, Cameronlite, yourlemon, nixx57
+// Remerciement à Stepiyou et Scrotumdepoulpe
+
 console.log("bot::Scope entry");
 
 const hDiscord = require('discord.js');
