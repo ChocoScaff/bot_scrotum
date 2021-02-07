@@ -14,7 +14,8 @@ Note ; pour installer bot_stepipoule sous windows, le proceder est encore EXTREM
 
 Installation sous Windows:
 Installer node.js sous votre ordinateur https://nodejs.org/en/download/
-Après avoir télécharger le git en cliquant sur clone, lancez le fichiers `setup_windows.bat` puis ouvrez le fichier `bot.js` avec un éditeur de texte (notepad++) et entrer votre Token discord récuperé sur https://discord.com/developers/  à l'emplacement dédié puis lancer le fichier `run_windows.bat` et `priez` pour que ça fonctionne !
+Après avoir télécharger le git en cliquant sur clone, lancez le fichiers `setup_windows.bat` puis ouvrez le fichier `bot.js` avec un éditeur de texte (notepad++) et entrer votre Token discord récuperé sur https://discord.com/developers/  à l'emplacement dédié.
+Allez dans OAuth2 puis cliquez dans scope sur bot puis dans bot permissions cliquez sur administrator copiez l'url sur votre navigateur pour ajouter le bot sur un de vos serveurs. Une fois tout ça terminer lancer le fichier.`run_windows.bat` et `priez` pour que ça fonctionne !
 `À noter que vous devez installer node et npm avant !`
 
 Bot_stepipoule 
