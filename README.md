@@ -10,7 +10,7 @@ Entrez `!list` sur votre serveur discord.
 
 Note ; pour installer bot_stepipoule sous windows, le proceder est encore EXTREMEMENT INSTABLE, si vous en avez la possiblitée, préférez utiliser linux pour cela
 
-lancez les fichiers `setup_windows.bat` puis `run_windows.bat` et `priez` pour que ça fonctionne !
+lancez les fichiers `setup_windows.bat` ouvrez le fichier avec un éditeur de text `bot.js`et entrer votre Token discord à l'emplacement dédié récuperé sur https://discord.com/developers/ puis lancer le fichier `run_windows.bat` et `priez` pour que ça fonctionne !
 `À noter que vous devez installer node et npm avant !`
 
 Bot_stepipoule 
