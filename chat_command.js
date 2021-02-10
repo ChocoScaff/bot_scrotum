@@ -77,7 +77,8 @@ const szMessageArraystepipoule =
     "Pour vous je suis une Poule ou un Poulet ? Attention à pas confondre genre et identité de genre !!",
     "La vie c'est comme un penis, elle est courte et les femmes la rendent dure sans raison",
     "les hommes hétérosexuels savent très bien que la misogynie ça dégoûte les femmes mais ils continuent à faire des blagues misogynes pour avoir la validations des autres hommes ? c’est juste que vous êtes homosexuels je pense",
-    "Mon opinion sur l'avortement est comme une lame à double tranchant. Je veux dire, j'aime l'idée de tuer des bébés, mais je n'aime pas l'idée de donner aux femmes la chance de prendre des décisions "
+    "Mon opinion sur l'avortement est comme une lame à double tranchant. Je veux dire, j'aime l'idée de tuer des bébés, mais je n'aime pas l'idée de donner aux femmes la chance de prendre des décisions ",
+    "Tu prends t'es caleçons et tu hors de ma vue"
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
