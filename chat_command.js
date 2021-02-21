@@ -79,6 +79,10 @@ const szMessageArraystepipoule =
     "les hommes hétérosexuels savent très bien que la misogynie ça dégoûte les femmes mais ils continuent à faire des blagues misogynes pour avoir la validations des autres hommes ? c’est juste que vous êtes homosexuels je pense",
     "Mon opinion sur l'avortement est comme une lame à double tranchant. Je veux dire, j'aime l'idée de tuer des bébés, mais je n'aime pas l'idée de donner aux femmes la chance de prendre des décisions ",
     "Tu prends t'es caleçons et tu hors de ma vue"
+    "Les policiers c'est bien, sauf quand ils t'enfoncent la mattraque de le fion"
+    "La vie est courte donc n'apelle pas ta bite la vie"
+    "les furries c'est comme les chips, quand tu les as tous bouffés y'en à plus"
+    "Les hipsters, c'est des gens qui ont pas compris que dans la vie il faut évoluer"
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
