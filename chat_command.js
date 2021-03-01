@@ -195,7 +195,7 @@ var szMessageArraycomplot1 =
 	"Le curry club ",
 	"Les feministes ",
 	"Les lbgt+",
-	"Les pédés,"
+	"Les pédés",
 	"Les islamos gauchiste",
 	"Les juifs",
 	"Les gacha life"
