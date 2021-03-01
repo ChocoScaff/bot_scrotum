@@ -78,11 +78,12 @@ const szMessageArraystepipoule =
     "La vie c'est comme un penis, elle est courte et les femmes la rendent dure sans raison",
     "les hommes hétérosexuels savent très bien que la misogynie ça dégoûte les femmes mais ils continuent à faire des blagues misogynes pour avoir la validations des autres hommes ? c’est juste que vous êtes homosexuels je pense",
     "Mon opinion sur l'avortement est comme une lame à double tranchant. Je veux dire, j'aime l'idée de tuer des bébés, mais je n'aime pas l'idée de donner aux femmes la chance de prendre des décisions ",
-    "Tu prends t'es caleçons et tu hors de ma vue"
-    "Les policiers c'est bien, sauf quand ils t'enfoncent la mattraque de le fion"
-    "La vie est courte donc n'apelle pas ta bite la vie"
-    "les furries c'est comme les chips, quand tu les as tous bouffés y'en à plus"
-    "Les hipsters, c'est des gens qui ont pas compris que dans la vie il faut évoluer"
+    "Tu prends t'es caleçons et tu hors de ma vue",
+    "Les policiers c'est bien, sauf quand ils t'enfoncent la mattraque de le fion",
+    "La vie est courte donc n'apelle pas ta bite la vie",
+    "les furries c'est comme les chips, quand tu les as tous bouffés y'en à plus",
+    "Les hipsters, c'est des gens qui ont pas compris que dans la vie il faut évoluer",
+    "J'ai écrit le scénario d'un film, Avec sa bite dans un sandwich Jeremy inventa le hotdog, il parcouru la Turquie pour apprendre les plus grandes techniques de maitre kébabié et créa son propre stand de hotdog une aventure a vivre en famille attention risque d'éréction a ne pas regarder si vous souffrez d'anémie"
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
