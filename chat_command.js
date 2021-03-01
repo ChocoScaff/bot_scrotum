@@ -185,7 +185,7 @@ function __s_ChatCmd_list(pChannel, args)
 var szMessageArraycomplot1 = 
 [
 	"La 5G ",
-	"La wifi",
+	"Le wifi",
 	"Les cons",
 	"Les admins",
 	"Les chibas",
@@ -194,8 +194,8 @@ var szMessageArraycomplot1 =
 	"Les furrys ",
 	"Le curry club ",
 	"Les feministes ",
-	"Les lbgt+",
-	"Les pédés",
+	"Les lgbt+",
+	"Les pédés,"
 	"Les islamos gauchiste",
 	"Les juifs",
 	"Les gacha life"
