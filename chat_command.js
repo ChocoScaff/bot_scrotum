@@ -185,11 +185,17 @@ function __s_ChatCmd_list(pChannel, args)
 var szMessageArraycomplot1 = 
 [
 	"La 5G ",
+	"La wifi",
+	"Les cons",
+	"Les admins",
+	"Les chibas",
+	"Half-Life 3",
 	"La covid 19 ",
 	"Les furrys ",
 	"Le curry club ",
 	"Les feministes ",
 	"Les lbgt+",
+	"Les pédés,"
 	"Les islamos gauchiste",
 	"Les juifs",
 	"Les gacha life"
@@ -199,16 +205,19 @@ var szMessageArraycomplot2 =
 [
 	" est/sont un complot ",
 	" est/sont une ruse ",
+	" est/sont une connerie",
 	" est/sont une mascarade ",
 	" est/sont une hallucination collective ",
 	" est/sont une machination",
 	" est/sont un guide",
 	" est/sont une conspiration"
+	" est/sont rien"
 ];
 
 var szMessageArraycomplot3 = 
 [
 	" pour restaurer l'URSS.",
+	" pour nous faire voter macron.",
 	" pour vaincre le capitalisme.",
 	" pour rendre <@694832068105994273> gay",
 	" pour empêcher la sortie de stepipoule épisode 3",
@@ -216,6 +225,9 @@ var szMessageArraycomplot3 =
 	" pour rendre impuissant les <@&744996855133503569>",
 	" afin de tuer les <@&732643483684438107>",
 	" pour ressuciter Hitler",
+	" pour réussuciter Staline",
+	" pour rendre le coronavius plus fort",
+	" pour ne rien faire",
 	" pour que le Makron domine le monde"
 ];
 
