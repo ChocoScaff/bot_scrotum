@@ -196,7 +196,7 @@ var szMessageArraycomplot1 =
 	"Le curry club ",
 	"Les feministes ",
 	"Les lgbt+",
-	"Les pédés,"
+	"Les pédés",
 	"Les islamos gauchiste",
 	"Les juifs",
 	"Les gacha life"
@@ -211,7 +211,7 @@ var szMessageArraycomplot2 =
 	" est/sont une hallucination collective ",
 	" est/sont une machination",
 	" est/sont un guide",
-	" est/sont une conspiration"
+	" est/sont une conspiration",
 	" est/sont rien"
 ];
 
