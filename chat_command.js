@@ -83,7 +83,8 @@ const szMessageArraystepipoule =
     "La vie est courte donc n'apelle pas ta bite la vie",
     "les furries c'est comme les chips, quand tu les as tous bouffés y'en à plus",
     "Les hipsters, c'est des gens qui ont pas compris que dans la vie il faut évoluer",
-    "J'ai écrit le scénario d'un film, Avec sa bite dans un sandwich Jeremy inventa le hotdog, il parcouru la Turquie pour apprendre les plus grandes techniques de maitre kébabié et créa son propre stand de hotdog une aventure a vivre en famille attention risque d'éréction a ne pas regarder si vous souffrez d'anémie"
+    "J'ai écrit le scénario d'un film, Avec sa bite dans un sandwich Jeremy inventa le hotdog, il parcouru la Turquie pour apprendre les plus grandes techniques de maitre kébabié et créa son propre stand de hotdog une aventure a vivre en famille attention risque d'éréction a ne pas regarder si vous souffrez d'anémie",
+    "'Changez pas, améliorez.' Cette phrase, que j'ai pratiquement aléatoirement composée, n'est peut-être pas si fausse... :thinking: Ça a du sens. Je crois que un des problèmes de l'humanité est notre obsession à vouloir toujours tout changer... Au lieu d'améliorer",
 ];
 
 function __s_ChatCmd_stepipoule(pChannel, args)
