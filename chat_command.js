@@ -179,7 +179,7 @@ function __s_ChatCmd_pileouface(pChannel, args)
 }
 function __s_ChatCmd_test(pChannel, args)
 {
-	pChannel.send("Reçu, le bot n'est pas down :yum:"
+	pChannel.send("Reçu, le bot n'est pas down :yum:");
 }
 
 function __s_ChatCmd_list(pChannel, args)
