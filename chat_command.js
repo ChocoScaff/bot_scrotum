@@ -177,6 +177,10 @@ function __s_ChatCmd_pileouface(pChannel, args)
     }
     }
 }
+function __s_ChatCmd_test(pChannel, args)
+{
+	pChannel.send("Reçu, le bot n'est pas down :yum:"
+}
 
 function __s_ChatCmd_list(pChannel, args)
 {
@@ -198,8 +202,18 @@ var szMessageArraycomplot1 =
 	"Les feministes ",
 	"Les lgbt+",
 	"Les pédés",
+	"Les fachos"
+	"Le coronavirus",
+	"Microsoft",
+	"Google",
+	"Amazon",
+	"Youtube",
+	"Twitter",
 	"Les islamos gauchiste",
 	"Les juifs",
+	"Les chinois",
+	"Les arabes",
+	"Les Noirs",
 	"Les gacha life"
 ];
 
@@ -227,9 +241,15 @@ var szMessageArraycomplot3 =
 	" pour rendre impuissant les <@&744996855133503569>",
 	" afin de tuer les <@&732643483684438107>",
 	" pour ressuciter Hitler",
-	" pour réussuciter Staline",
+	" pour ressuciter Staline",
 	" pour rendre le coronavius plus fort",
 	" pour ne rien faire",
+	" pour donner du pouvoir aux furries",
+	" pour tester les homosexuels",
+	" pour nous envoyer des ondes dans le cerveau afin de le dérégler",
+	" pour rendre plus fort mélanchon",
+	" pour faire élire Mélanchon",
+	" pour trouver une source illimitée d'energie",
 	" pour que le Makron domine le monde"
 ];
 
@@ -247,6 +267,7 @@ console.log("chat_command::Scope declare");
 gCmdSys.RegisterCCmd("stepipoule", __s_ChatCmd_stepipoule);
 gCmdSys.RegisterCCmd("legay", __s_ChatCmd_legay);
 gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
+gCmdSys.RegisterCCmd("test", __s_ChatCmd_test);
 gCmdSys.RegisterCCmd("pileouface", __s_ChatCmd_pileouface);
 gCmdSys.RegisterCCmd("complot", __s_ChatCmd_complot);
 
