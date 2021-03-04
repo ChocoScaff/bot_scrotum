@@ -181,6 +181,37 @@ function __s_ChatCmd_test(pChannel, args)
 {
 	pChannel.send("Reçu, le bot n'est pas down :yum: !");
 }
+function __s_ChatCmd_gay(pChannel, args)
+{
+    var RNG;
+    {
+    RNG = RandomInt(0,6); // nombre aléatoire
+    if (RNG == 0)
+    {
+    pChannel.send("je suis gay"); // Prende un mots dans la variable et l'envoie sur le serveur
+    }
+    if (RNG == 1)
+    {
+    pChannel.send("tu est gay"); // Prende un mots dans la variable et l'envoie sur le serveur
+    }
+    if (RNG == 2)
+    {
+    pChannel.send("il est gay");
+    }
+    if (RNG == 3)
+    {
+    pChannel.send("nous sommes gays");
+    }
+    if (RNG == 4)
+    {
+    pChannel.send("vous etes gays");
+    }
+    if (RNG == 5)
+    {
+    pChannel.send("ils sont gays");
+    }
+    }
+}
 
 function __s_ChatCmd_list(pChannel, args)
 {
