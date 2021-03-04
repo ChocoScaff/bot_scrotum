@@ -179,7 +179,7 @@ function __s_ChatCmd_pileouface(pChannel, args)
 }
 function __s_ChatCmd_test(pChannel, args)
 {
-	pChannel.send("Reçu, le bot n'est pas down :yum:");
+	pChannel.send("Reçu, le bot n'est pas down :yum: !");
 }
 
 function __s_ChatCmd_list(pChannel, args)
@@ -214,6 +214,16 @@ var szMessageArraycomplot1 =
 	"Les chinois",
 	"Les arabes",
 	"Les Noirs",
+	"Les meufs",
+	"Half life decay",
+	"Cod",
+	"CS:GO",
+	"Windows",
+	"Bill gates",
+	"steve jobs",
+	"les casques vr",
+	"les chats",
+	"pornhub",
 	"Les gacha life"
 ];
 
@@ -227,7 +237,8 @@ var szMessageArraycomplot2 =
 	" est/sont une machination",
 	" est/sont un guide",
 	" est/sont une conspiration",
-	" est/sont rien"
+	" est/sont rien",
+	" est/sont tentative"
 ];
 
 var szMessageArraycomplot3 = 
@@ -246,6 +257,7 @@ var szMessageArraycomplot3 =
 	" pour ne rien faire",
 	" pour donner du pouvoir aux furries",
 	" pour tester les homosexuels",
+	" pour Restaurer une dictautre",
 	" pour nous envoyer des ondes dans le cerveau afin de le dérégler",
 	" pour rendre plus fort mélanchon",
 	" pour faire élire Mélanchon",
