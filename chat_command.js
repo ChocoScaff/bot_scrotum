@@ -255,7 +255,16 @@ var szMessageArraycomplot1 =
 	"les casques vr",
 	"les chats",
 	"pornhub",
-	"Les gacha life"
+	"Les gacha life",
+	"les fans de garri's mod",
+	"les youtubeurs",
+	"Patrick sébastien",
+	"Sébastien Patoche",
+	"amazon",
+	"hitler",
+	"staline",
+	"youporn",
+	"La nasa"
 ];
 
 var szMessageArraycomplot2 = 
@@ -293,7 +302,14 @@ var szMessageArraycomplot3 =
 	" pour rendre plus fort mélanchon",
 	" pour faire élire Mélanchon",
 	" pour trouver une source illimitée d'energie",
-	" pour que le Makron domine le monde"
+	" pour que le Makron domine le monde",
+	" pour empecher le prochain E3",
+	" pour détruire la lune",
+	" pour rétablir le nazisme",
+	" pour nourrir les gays",
+	" pour apprendre aux gays comment qu'on devient hétéro",
+	" pour convertir les hétéros en bi",
+	" pour au final, rajouter des phrases au bot stépipoule"
 ];
 
 function __s_ChatCmd_complot(pChannel, args)
