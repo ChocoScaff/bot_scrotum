@@ -202,7 +202,7 @@ var szMessageArraycomplot1 =
 	"Les feministes ",
 	"Les lgbt+",
 	"Les pédés",
-	"Les fachos"
+	"Les fachos",
 	"Le coronavirus",
 	"Microsoft",
 	"Google",
