@@ -335,6 +335,8 @@ gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
 gCmdSys.RegisterCCmd("test", __s_ChatCmd_test);
 gCmdSys.RegisterCCmd("pileouface", __s_ChatCmd_pileouface);
 gCmdSys.RegisterCCmd("complot", __s_ChatCmd_complot);
+gCmdSys.RegisterCCmd("complot", __s_ChatCmd_gay);
+
 
 
 console.log("chat_command::Scope startup");
