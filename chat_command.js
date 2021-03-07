@@ -264,7 +264,8 @@ var szMessageArraycomplot1 =
 	"hitler",
 	"staline",
 	"youporn",
-	"La nasa"
+	"La nasa",
+	"Rick astley"
 ];
 
 var szMessageArraycomplot2 = 
@@ -309,7 +310,12 @@ var szMessageArraycomplot3 =
 	" pour nourrir les gays",
 	" pour apprendre aux gays comment qu'on devient hétéro",
 	" pour convertir les hétéros en bi",
-	" pour au final, rajouter des phrases au bot stépipoule"
+	" pour au final, rajouter des phrases au bot stépipoule",
+	" pour tuer rick astley",
+	" pour rickroll les <@&732643483684438107>",
+	" pour affaiblir mao-zeg hong",
+	" afin de provoquer une famine",
+	" pour faire un gros dongcopter"
 ];
 
 function __s_ChatCmd_complot(pChannel, args)
