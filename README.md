@@ -32,6 +32,6 @@ Allez dans OAuth2 puis cliquez dans scope sur bot puis dans bot permissions cliq
 \\\ npm
 \\\ de la chance
 
-# codes d'erreur : 
-# 0.0 erreur iconnue ; merci de la signaler sur https://github.com/ChocoScaff !
-# 0.1 Gestionnaire de paquets non valide
+codes d'erreur : 
+0.0 erreur iconnue ; merci de la signaler sur https://github.com/ChocoScaff !
+0.1 Gestionnaire de paquets non valide
