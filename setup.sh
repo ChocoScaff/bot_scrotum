@@ -1,7 +1,7 @@
 # codes d'erreur : 
 # 0.0 erreur iconnue ; merci de la signaler sur https://github.com/ChocoScaff !
 # 0.1 Gestionnaire de paquets non valide
-# dependences : sudo, npm (qui sera installer automatiquement)
+# dependences : sudo, npm (qui sera installé automatiquement)
 # demande le gestionnaire de paquet et installe npm
 
 echo -e "\e[1;35m
