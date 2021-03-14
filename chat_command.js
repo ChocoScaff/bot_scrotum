@@ -218,13 +218,20 @@ function __s_ChatCmd_list(pChannel, args)
 	var szMsg = gCmdSys.PrintCommand();
 	pChannel.send(szMsg);
 }
+function __s_ChatCmd_ver(pChannel, args)
+{
+	pChannel.send("v4.01");
+}
 
 var szMessageArraycomplot1 = 
 [
 	"La 5G ",
 	"Le wifi",
 	"Les cons",
+	"Les russes",
 	"Les admins",
+	"Les test PCR",
+	"Les vieux pc",
 	"Les chibas",
 	"Half-Life 3",
 	"La covid 19 ",
@@ -265,7 +272,12 @@ var szMessageArraycomplot1 =
 	"staline",
 	"youporn",
 	"La nasa",
-	"Rick astley"
+	"tf2",
+	"duke nuken 3d",
+	"doom",
+	"quake",
+	"Rick astley",
+	"marine le pen"
 ];
 
 var szMessageArraycomplot2 = 
@@ -273,6 +285,7 @@ var szMessageArraycomplot2 =
 	" est/sont un complot ",
 	" est/sont une ruse ",
 	" est/sont une connerie",
+	" est/sont un test",
 	" est/sont une mascarade ",
 	" est/sont une hallucination collective ",
 	" est/sont une machination",
@@ -294,11 +307,17 @@ var szMessageArraycomplot3 =
 	" afin de tuer les <@&732643483684438107>",
 	" pour ressuciter Hitler",
 	" pour ressuciter Staline",
+	" pour faire un deuxième fion dans françois fillon",
+	" pour supprimmer github",
+	" to make america great again ! ",
 	" pour rendre le coronavius plus fort",
 	" pour ne rien faire",
 	" pour donner du pouvoir aux furries",
 	" pour tester les homosexuels",
 	" pour Restaurer une dictautre",
+	" pour tuer l'oncle sam",
+	" pour planter des antennes 5G",
+	" pour rendre riche marine le pen",
 	" pour nous envoyer des ondes dans le cerveau afin de le dérégler",
 	" pour rendre plus fort mélanchon",
 	" pour faire élire Mélanchon",
@@ -335,7 +354,8 @@ gCmdSys.RegisterCCmd("list", __s_ChatCmd_list);
 gCmdSys.RegisterCCmd("test", __s_ChatCmd_test);
 gCmdSys.RegisterCCmd("pileouface", __s_ChatCmd_pileouface);
 gCmdSys.RegisterCCmd("complot", __s_ChatCmd_complot);
-gCmdSys.RegisterCCmd("complot", __s_ChatCmd_gay);
+gCmdSys.RegisterCCmd("gay", __s_ChatCmd_gay);
+gCmdSys.RegisterCCmd("ver", __s_ChatCmd_ver);
 
 
 
